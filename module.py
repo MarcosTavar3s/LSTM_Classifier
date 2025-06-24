@@ -158,7 +158,6 @@ class classifier_model():
             if len(frames_queue) == self.SEQUENCE_LENGTH:
                 labels_probabilities = self.model.predict(np.expand_dims(frames_queue, axis=0))[0]
                 predicted_label = np.argmax(labels_probabilities)
-                print(labels_probabilities)
                 predicted_class = self.CLASSES_LIST[predicted_label]
 
             cv2.putText(frame, predicted_class, (10,30), cv2.FONT_HERSHEY_COMPLEX_SMALL, 1, (0,255,0), 2)
@@ -177,6 +176,11 @@ class classifier_model():
 
         self.model_history = self.model.fit(x=self.features_train, y=self.labels_train, epochs=epochs,
                                             batch_size=batch_size, validation_split=validation_split, callbacks=[early_stopping_callback])
+
+    def evaluate(self):
+        self.model_evaluation = self.model.evaluate(self.features_test, self.labels_test)
+        print(f"Model evaluation: {self.model_evaluation}")
+        # evaluation = pd.DataFrame()
 
     def load_model(self,path):
         self.model = tf.keras.models.load_model(path)
@@ -200,9 +204,9 @@ class classifier_model():
 
     def save_metrics(self):
         try:
-            print(self.model_history.history)
+            # print(self.model_history.history)
             metrics_df = pd.DataFrame(self.model_history.history)
             metrics_df.to_csv("metrics_history.csv", index_label="epoch")
-            print("Métricas salvas com sucesso!")
+            print("Metrics saved sucessfully!")
         except Exception as e:
-            print(f"Erro ao salvar métricas: {e}")
+            print(f"Error in saving metrics: {e}")
