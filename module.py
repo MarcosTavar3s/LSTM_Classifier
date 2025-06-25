@@ -176,11 +176,24 @@ class classifier_model():
 
         self.model_history = self.model.fit(x=self.features_train, y=self.labels_train, epochs=epochs,
                                             batch_size=batch_size, validation_split=validation_split, callbacks=[early_stopping_callback])
+        
+        self.evaluate()
 
     def evaluate(self):
         self.model_evaluation = self.model.evaluate(self.features_test, self.labels_test)
-        print(f"Model evaluation: {self.model_evaluation}")
-        # evaluation = pd.DataFrame()
+        
+        data = {
+            "loss": [str(self.model_evaluation[0])],
+            "accuracy": [str(self.model_evaluation[1])],
+            "precision": [str(self.model_evaluation[2])],
+            "recall": [str(self.model_evaluation[3])]
+        }
+        
+        df = pd.DataFrame(data)        
+        df.to_json("data.json", orient="records", lines=True)
+        
+        print(f"Model evaluation saved sucessfully: data.json")
+        
 
     def load_model(self,path):
         self.model = tf.keras.models.load_model(path)
@@ -206,7 +219,7 @@ class classifier_model():
         try:
             # print(self.model_history.history)
             metrics_df = pd.DataFrame(self.model_history.history)
-            metrics_df.to_csv("metrics_history.csv", index_label="epoch")
+            metrics_df.to_csv("results.csv", index_label="epoch")
             print("Metrics saved sucessfully!")
         except Exception as e:
             print(f"Error in saving metrics: {e}")
