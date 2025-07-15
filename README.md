@@ -1,5 +1,5 @@
 # Classification of Human Movements in Time Series Using Long Short-Term Memory (LSTM)
-Overall description
+This project evaluates the performance of a Long Short-Term Memomry (LSTM) architecture for human movement classification in the UCF50 dataset. 
 
 ## Introduction
 
