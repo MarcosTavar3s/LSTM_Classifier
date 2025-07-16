@@ -7,7 +7,7 @@ Human movements consist of actions that cannot be properly classified by one ima
 Regarding the dataset, this study utilizes Realistic Action Recognition: UCF50 [[1](https://www.kaggle.com/datasets/pypiahmad/realistic-action-recognition-ucf50/code)]. The main reasons for this choice are: the variety of human movement and consistency in usage worldwide.
 
 ## Architecture
-To carry out this study, based on Bleed AI Academy’s Youtube video [2], the following architecture of LSTM was used:
+To carry out this study, based on Bleed AI Academy’s Youtube video [[2](https://www.youtube.com/watch?v=QmtSkq3DYko)], the following architecture of LSTM was used:
 <pre> 
                               ------------------------------------------------
                               |                 ConvLSTM2D                   |
