@@ -69,7 +69,7 @@ To carry out this study, based on Bleed AI Academy’s Youtube video [[2](https:
   </pre>
 
 ## Methods
-...
+Initially, to assess which configuration presents the best performance, it was decided to fix the number of classes to seven: WalkingWithDog, Skiing, Swing, Diving, Mixing, HorseRace, and HorseRiding. The classes are encoded with One-Hot Encoded Labels (no need for ordering among themselves). After that establishment, the next step was to alter the quantity of collected frames from 15 to 120 frames. Finally, the evaluation was deemed successful.
 
 ## Results and Discussion
 ...
