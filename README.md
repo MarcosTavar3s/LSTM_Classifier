@@ -64,7 +64,7 @@ To carry out this study, based on Bleed AI Academy’s Youtube video [2], the fo
                               ------------------------------------------------
                               |                  Dense                       |
                               ------------------------------------------------
-                              |          6 classes, Activation=SoftMax       |
+                              |        6 classes, Activation=SoftMax         |
                               ------------------------------------------------
   </pre>
 
