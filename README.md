@@ -77,7 +77,7 @@ For matters of evaluation, metrics such as loss, accuracy, recall, and precision
 
 
 ## Results and Discussion
-...
+Initially, the metrics of mean loss, accuracy, precision, recall, and training time for each trained model will be discussed.
 
 ## Conclusion
 The study demonstrated that LSTMs are a solution to human movement classification problems. Despite using a small and educational dataset, the trained model presented satisfactory results.  Furthermore, it is worth noting that, in terms of the UCF50 dataset, the overall best setting happens when 60 frames are captured from each video. 
