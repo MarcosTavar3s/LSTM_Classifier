@@ -127,7 +127,7 @@ Initially, to assess which configuration presents the best performance, it was d
 
 | Skiing | HorseRiding | Swing |  WalkingWithDog |
 | :-----: | :-----: | :-----: | :-----: |
-| <img src="code/examples/v_Skiing_g24_c01.gif" alt="Skiing gif" width="200"/> | <img src="code/examples/v_HorseRiding_g16_c02.gif" alt="HorseRiding gif" width="200"/> | <img src="code/examples/v_Swing_g11_c02.gif" alt=" Swing gif" width="200"/> | <img src="code/examples/v_WalkingWithDog_g19_c05.gif" alt=" WalkingWithDog gif" width="200"/> |
+| <img src="code/examples/v_Skiing_g24_c01.gif" alt="Skiing gif" width="150"/> | <img src="code/examples/v_HorseRiding_g16_c02.gif" alt="HorseRiding gif" width="150"/> | <img src="code/examples/v_Swing_g11_c02.gif" alt=" Swing gif" width="150"/> | <img src="code/examples/v_WalkingWithDog_g19_c05.gif" alt=" WalkingWithDog gif" width="150"/> |
 
 <div align="center">
 
