@@ -20,7 +20,7 @@ This project evaluates the performance of a Long Short-Term Memory (LSTM) archit
 - [5. Conclusion](#5-conclusion)
 - [6. Future Steps](#6-future-steps)
 - [7. Running Locally](#7-running-locally) 
-- [8. Team](#8-team)
+- [8. Developer Team](#8-developer-team)
 - [9. References](#9-references)
 - [10. License](#10-license)
 
@@ -29,9 +29,10 @@ This project evaluates the performance of a Long Short-Term Memory (LSTM) archit
 ```
 LSTM_Classifier/
 ├── code/
+|   ├── examples # videos to test the network
 │   ├── module.py
 │   ├── main.py
-|   ├── examples # videos to test the network
+|   ├── requirements.txt
 ├── statistics/ # statistic results
 ├── README.md
 └── LICENSE
@@ -42,6 +43,11 @@ LSTM_Classifier/
 Human movements consist of actions that cannot be properly classified by one image alone, but rather by a set of images in a specific sequence. In this context, the goal of this project is to address the problem of identifying movements by using multi-frame containers (videos) and creating a time-series neural network module. To achieve this goal,  a Long Short-Term Memory (LSTM) architecture was chosen due to its ability to retain information from previous steps. Furthermore, to evaluate the network, different frame inputs were tested from 15 to 120 frames.
 
 Regarding the dataset, this study utilizes Realistic Action Recognition: UCF50 [[1](https://www.kaggle.com/datasets/pypiahmad/realistic-action-recognition-ucf50/code)]. The main reasons for this choice are: the variety of human movement and consistency in usage worldwide.
+
+| Diving |
+| :-----: |
+| <img src="code/examples/diving_gif.gif" alt="Diving gif" width="200"/> |
+_Example of classes in UCF50 dataset_
 
 ---
 
@@ -113,6 +119,10 @@ To carry out this study, based on Bleed AI Academy’s Youtube video [[2](https:
 ## 3. Methods
 Initially, to assess which configuration presents the best performance, it was decided to fix the number of classes to seven: WalkingWithDog, Skiing, Swing, Diving, Mixing, HorseRace, and HorseRiding. The classes are encoded with One-Hot Encoded Labels (no need for ordering among themselves).
 
+| Diving |
+| :-----: |
+| <img src="code/examples/diving_gif.gif" alt="Diving gif" width="200"/> |
+
 After that establishment, the next step was to alter the quantity of collected frames from 15 to 120 frames. There, I trained each network in 5 epochs to expect an overall performance, and subsequently selected the more efficient ones for longer training (30 epochs).
 
 For matters of evaluation, metrics such as loss, accuracy, recall, and precision were the backbone to appoint the best network for this context. Finally, the assessment was deemed successful.
@@ -153,13 +163,13 @@ venv/Scripts/activate # Windows
 pip install -r requirements.txt
 ```
 
-Run the project:
+🚀Run the project:
 ```bash
 python main.py
 ```
 ---
 
-## 8. Team
+## 8. Developer Team
 | [![](https://github.com/MarcosTavar3s.png?size=80)](https://github.com/MarcosTavar3s) | [![](https://github.com/heltonmaia.png?size=80)](https://github.com/heltonmaia) |
 | :-----------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------: |
 |                           **Marcos Aurélio**<br> Researcher                           |                       **Helton Maia** <br> Academic Advisor                     |
