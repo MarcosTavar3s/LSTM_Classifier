@@ -27,15 +27,12 @@ This project evaluates the performance of a Long Short-Term Memory (LSTM) archit
 ---
 ## 📂 Project Tree
 ```
-urban-disaster-monitor/
+LSTM_Classifier/
 ├── code/
-│   ├── module.py/
-│   ├── main.py/
-├── statistics/
-│   ├── test/
-│   ├── train/
-│   ├── val/
-│   ├── data.yaml/
+│   ├── module.py
+│   ├── main.py
+|   ├── examples # videos to test the network
+├── statistics/ # statistic results
 ├── README.md
 └── LICENSE
 ```
