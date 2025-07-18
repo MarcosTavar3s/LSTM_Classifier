@@ -22,10 +22,11 @@ This project evaluates the performance of a Long Short-Term Memory (LSTM) archit
 - [4. Results and Discussion](#4-results-and-discussion)
 - [5. Conclusion](#5-conclusion)
 - [6. Future Steps](#6-future-steps)
-- [7. Running Locally](#7-running-locally) 
-- [8. Developer Team](#8-developer-team)
-- [9. References](#9-references)
-- [10. License](#10-license)
+- [7. Module.py methods](#7-module.py-methods)
+- [8. Running Locally](#8-running-locally)
+- [9. Developer Team](#8-developer-team)
+- [10. References](#9-references)
+- [11. License](#10-license)
 
 ---
 ## 📂 Project Tree
@@ -126,7 +127,7 @@ To carry out this study, based on Bleed AI Academy’s Youtube video [[2](https:
 ---
 
 ## 3. Methodology
-## 3.1. Classes
+### 3.1. Classes
 Initially, to assess which configuration presents the best performance, it was decided to fix the number of classes to seven: WalkingWithDog, Skiing, Swing, Diving, Mixing, HorseRace, and HorseRiding. The classes are encoded with One-Hot Encoded Labels (no need for ordering among themselves).
 
 <div align="center">
@@ -139,10 +140,10 @@ _Example of Skiing, HorseRiding, Swing and WalkingWithDog classes in UCF50 datas
 
 </div>
 
-## 3.2. Quantity of Frames
+### 3.2. Quantity of Frames
 After that establishment, the next step was to alter the quantity of collected frames from 15 to 120 frames. There, I trained each network in 5 epochs to expect an overall performance, and subsequently selected the more efficient ones for longer training (30 epochs). 
 
-## 3.3. Performance Evaluation
+### 3.3. Performance Evaluation
 For matters of evaluation, metrics such as loss, accuracy, recall, and precision were the backbone to appoint the best network for this context. Finally, the assessment was deemed successful.
 
 ---
@@ -161,7 +162,13 @@ The study demonstrated that LSTMs are a solution to human movement classificatio
 It is worth noting that this repository is only a scratch of LSTM's potential to tackle problems concerning the identification of human movements. For the future, adding the capacity of continuous learning, designing an accessible user terminal to execute functions (such as training, creating a dataset, evaluating performance), and testing different architectures are possible implementations.
 
 ---
-## 7. Running Locally
+
+## 7. Module.py methods
+As a side effect of this study, I created a structured and oriented module for the LSTM architecture shown above. The main methods are:
+
+
+---
+## 8. Running Locally
 📥 Clone the repository:
 ```bash
 git clone https://https://github.com/MarcosTavar3s/LSTM_Classifier.git
@@ -187,18 +194,18 @@ python main.py
 ```
 ---
 
-## 8. Developer Team
+## 9. Developer Team
 | [![](https://github.com/MarcosTavar3s.png?size=80)](https://github.com/MarcosTavar3s) | [![](https://github.com/heltonmaia.png?size=80)](https://github.com/heltonmaia) |
 | :-----------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------: |
 |                           **Marcos Aurélio**<br> Researcher                           |                       **Helton Maia** <br> Academic Advisor                     |
 
 ---
-## 9. References
+## 10. References
 [1] P. Ahmad, "Realistic Action Recognition - UCF50," Kaggle, 2022. [Online]. Available: [https://www.kaggle.com/datasets/pypiahmad/realistic-action-recognition-ucf50](https://www.kaggle.com/datasets/pypiahmad/realistic-action-recognition-ucf50).
 
 [2] Bleed AI Academy, "Human Activity Recognition using TensorFlow (CNN + LSTM) | 2 Methods", YouTube, 2021. [Online]. Available: [https://www.youtube.com/watch?v=QmtSkq3DYko](https://www.youtube.com/watch?v=QmtSkq3DYko).
 
 ---
 
-## 10. License
+## 11. License
 This project is licensed under the terms of the [GNU General Public License v3.0](https://github.com/MarcosTavar3s/LSTM_Classifier/blob/main/LICENSE).
