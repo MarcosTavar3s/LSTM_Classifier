@@ -43,11 +43,17 @@ LSTM_Classifier/
 Human movements consist of actions that cannot be properly classified by one image alone, but rather by a set of images in a specific sequence. In this context, the goal of this project is to address the problem of identifying movements by using multi-frame containers (videos) and creating a time-series neural network module. To achieve this goal,  a Long Short-Term Memory (LSTM) architecture was chosen due to its ability to retain information from previous steps. Furthermore, to evaluate the network, different frame inputs were tested from 15 to 120 frames.
 
 Regarding the dataset, this study utilizes Realistic Action Recognition: UCF50 [[1](https://www.kaggle.com/datasets/pypiahmad/realistic-action-recognition-ucf50/code)]. The main reasons for this choice are: the variety of human movement and consistency in usage worldwide.
+<br>
 
-| Diving |
-| :-----: |
-| <img src="code/examples/diving_gif.gif" alt="Diving gif" width="200"/> |
-_Example of classes in UCF50 dataset_
+<div align="center">
+
+| Diving | HorseRace | Mixing | Skiing |
+| :-----: | :-----: | :-----: | :-----: |
+| <img src="code/examples/diving_gif.gif" alt="Diving gif" width="200"/> | <img src="code/examples/v_HorseRace_g11_c07.gif" alt="HorseRace gif" width="200"/> | <img src="code/examples/v_Mixing_g18_c02.gif" alt="Mixing gif" width="200"/> | <img src="code/examples/v_Skiing_g24_c01.gif" alt="Skiing gif" width="200"/> |
+
+  _Example of Diving, HorseRace, Mixing, and Skiing classes in UCF50 dataset_
+  
+</div>
 
 ---
 
