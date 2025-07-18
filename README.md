@@ -33,7 +33,7 @@ This project evaluates the performance of a Long Short-Term Memory (LSTM) archit
 ```
 LSTM_Classifier/
 ├── code/
-|   ├── examples # videos to test the network
+|   ├── examples/ # videos to test the network
 │   ├── module.py
 │   ├── main.py
 |   ├── requirements.txt
