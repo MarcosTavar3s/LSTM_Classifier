@@ -125,11 +125,11 @@ To carry out this study, based on Bleed AI Academy’s Youtube video [[2](https:
 ## 3. Methods
 Initially, to assess which configuration presents the best performance, it was decided to fix the number of classes to seven: WalkingWithDog, Skiing, Swing, Diving, Mixing, HorseRace, and HorseRiding. The classes are encoded with One-Hot Encoded Labels (no need for ordering among themselves).
 
+<div align="center">
+
 | Skiing | HorseRiding | Swing |  WalkingWithDog |
 | :-----: | :-----: | :-----: | :-----: |
 | <img src="code/examples/v_Skiing_g24_c01.gif" alt="Skiing gif" width="150"/> | <img src="code/examples/v_HorseRiding_g16_c02.gif" alt="HorseRiding gif" width="150"/> | <img src="code/examples/v_Swing_g11_c02.gif" alt=" Swing gif" width="150"/> | <img src="code/examples/v_WalkingWithDog_g19_c05.gif" alt=" WalkingWithDog gif" width="150"/> |
-
-<div align="center">
 
 _Example of Skiing, HorseRiding, Swing and WalkingWithDog classes in UCF50 dataset_
 
