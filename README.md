@@ -15,7 +15,10 @@ This project evaluates the performance of a Long Short-Term Memory (LSTM) archit
 ## 📜 Summary
 - [1. Introduction](#1-introduction)
 - [2. Architecture](#2-architecture)
-- [3. Methods](#3-methods)
+- [3. Methodology](#3-methodology)
+  -   [3.1. Classes](#31-classes)
+  -   [3.2. Quantity of Frames](#32-quantity-of-frames)
+  -   [3.3. Performance Evaluation](#33-performance-evaluation)
 - [4. Results and Discussion](#4-results-and-discussion)
 - [5. Conclusion](#5-conclusion)
 - [6. Future Steps](#6-future-steps)
@@ -122,7 +125,8 @@ To carry out this study, based on Bleed AI Academy’s Youtube video [[2](https:
 
 ---
 
-## 3. Methods
+## 3. Methodology
+## 3.1. Classes
 Initially, to assess which configuration presents the best performance, it was decided to fix the number of classes to seven: WalkingWithDog, Skiing, Swing, Diving, Mixing, HorseRace, and HorseRiding. The classes are encoded with One-Hot Encoded Labels (no need for ordering among themselves).
 
 <div align="center">
@@ -134,9 +138,11 @@ Initially, to assess which configuration presents the best performance, it was d
 _Example of Skiing, HorseRiding, Swing and WalkingWithDog classes in UCF50 dataset_
 
 </div>
-  
-After that establishment, the next step was to alter the quantity of collected frames from 15 to 120 frames. There, I trained each network in 5 epochs to expect an overall performance, and subsequently selected the more efficient ones for longer training (30 epochs).
 
+## 3.2. Quantity of Frames
+After that establishment, the next step was to alter the quantity of collected frames from 15 to 120 frames. There, I trained each network in 5 epochs to expect an overall performance, and subsequently selected the more efficient ones for longer training (30 epochs). 
+
+## 3.3. Performance Evaluation
 For matters of evaluation, metrics such as loss, accuracy, recall, and precision were the backbone to appoint the best network for this context. Finally, the assessment was deemed successful.
 
 ---
