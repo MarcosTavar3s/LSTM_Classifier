@@ -5,7 +5,14 @@
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://github.com/MarcosTavar3s/LSTM_Classifier/blob/main/LICENSE) [![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://www.python.org/) [![TensorFlow](https://img.shields.io/badge/TensorFlow-2.14%2B-FF6F00?logo=tensorflow)](https://www.tensorflow.org/)
 </div>
 
-## Summary
+---
+
+## 📋 Description 
+This project evaluates the performance of a Long Short-Term Memory (LSTM) architecture for human movement classification in the UCF50 dataset. 
+
+---
+
+## 📜 Summary
 - [1. Introduction](#1-introduction)
 - [2. Architecture](#2-architecture)
 - [3. Methods](#3-methods)
@@ -15,6 +22,24 @@
 - [7. References](#7-references)
 - [8. Team](#8-team)
 - [9. License](#9-license)
+
+---
+## 📂 Project Tree
+```
+urban-disaster-monitor/
+├── code/
+│   ├── module.py/
+│   ├── main.py/
+├── statistics/
+│   ├── test/
+│   ├── train/
+│   ├── val/
+│   ├── data.yaml/
+├── README.md
+└── LICENSE
+```
+---
+
 
 ## 1. Introduction
 Human movements consist of actions that cannot be properly classified by one image alone, but rather by a set of images in a specific sequence. In this context, the goal of this project is to address the problem of identifying movements by using multi-frame containers (videos) and creating a time-series neural network module. To achieve this goal,  a Long Short-Term Memory (LSTM) architecture was chosen due to its ability to retain information from previous steps. Furthermore, to evaluate the network, different frame inputs were tested from 15 to 120 frames.
@@ -105,6 +130,13 @@ It is worth noting that this repository is only a scratch of LSTM's potential to
 
 [2] Bleed AI Academy, "Human Activity Recognition using TensorFlow (CNN + LSTM) | 2 Methods", YouTube, 2021. [Online]. Available: [https://www.youtube.com/watch?v=QmtSkq3DYko](https://www.youtube.com/watch?v=QmtSkq3DYko).
 
+---
 ## 8. Team
+| [![](https://github.com/MarcosTavar3s.png?size=80)](https://github.com/MarcosTavar3s) | [![](https://github.com/heltonmaia.png?size=80)](https://github.com/heltonmaia) |
+| :-----------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------: |
+|                           **Marcos Aurélio**<br> Researcher                           |                       **Helton Maia** <br> Academic Advisor                     |
+
+---
 
 ## 9. License
+This project is licensed under the terms of the [GNU General Public License v3.0](https://github.com/MarcosTavar3s/LSTM_Classifier/blob/main/LICENSE).
