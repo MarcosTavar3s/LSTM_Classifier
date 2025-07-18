@@ -1,4 +1,10 @@
+<div align="center">
+  
 # Classification of Human Movements in Time Series Using Long Short-Term Memory (LSTM)
+  
+[![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://www.python.org/) [![TensorFlow](https://img.shields.io/badge/TensorFlow-2.14%2B-FF6F00?logo=tensorflow)](https://www.tensorflow.org/)[![License](https://img.shields.io/badge/license-MIT-green.svg)]
+
+</div>
 This project evaluates the performance of a Long Short-Term Memory (LSTM) architecture for human movement classification in the UCF50 dataset. 
 
 ## Introduction
