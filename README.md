@@ -19,14 +19,14 @@ This project evaluates the performance of a Long Short-Term Memory (LSTM) archit
   -   [3.1. Classes](#31-classes)
   -   [3.2. Quantity of Frames](#32-quantity-of-frames)
   -   [3.3. Performance Evaluation](#33-performance-evaluation)
-- [4. Results and Discussion](#4-results-and-discussion)
-- [5. Conclusion](#5-conclusion)
-- [6. Future Steps](#6-future-steps)
-- [7. Module.py methods](#7-module.py-methods)
+- [4. Module.py methods](#4-modulepy-methods)
+- [5. Results and Discussion](#5-results-and-discussion)
+- [6. Conclusion](#6-conclusion)
+- [7. Future Steps](#7-future-steps)
 - [8. Running Locally](#8-running-locally)
-- [9. Developer Team](#8-developer-team)
-- [10. References](#9-references)
-- [11. License](#10-license)
+- [9. Developer Team](#9-developer-team)
+- [10. References](#10-references)
+- [11. License](#11-license)
 
 ---
 ## 📂 Project Tree
@@ -148,24 +148,35 @@ For matters of evaluation, metrics such as loss, accuracy, recall, and precision
 
 ---
 
-## 4. Results and Discussion
+## 4. Module.py methods
+As a side effect of this study, I created a structured and oriented module for the LSTM architecture shown above. The main methods are:
+  
+| **Method** | **Description**       |
+|-------|-----------------|
+| create_dataset | creates a dataset from the input path |
+| frame_features_extraction | extract features from each class and store to create the dataset |
+| architecture | assemble the LSTM architecture |
+| predict | predict an input video and store it in an output file |
+| train | train the LSTM model (train: 70, val: 15, test: 15) |
+| evaluate | generate a .json with loss, accuracy, precision, and recall metrics |
+| load_model | load an existent model |
+| save_architecture_image | save an image of the LSTM architecture |
+| save_metric | save training metrics over epochs in a .csv |
+
+---
+
+## 5. Results and Discussion
 Initially, the metrics of mean loss, accuracy, precision, recall, and training time for each trained model will be discussed.
 
 ---
 
-## 5. Conclusion
+## 6. Conclusion
 The study demonstrated that LSTMs are a solution to human movement classification problems. Despite using a small and educational dataset, the trained model presented satisfactory results.  Furthermore, it is worth noting that, in terms of the UCF50 dataset, the overall best setting happens when 60 frames are captured from each video. 
 
 ---
 
-##  6. Future Steps
+##  7. Future Steps
 It is worth noting that this repository is only a scratch of LSTM's potential to tackle problems concerning the identification of human movements. For the future, adding the capacity of continuous learning, designing an accessible user terminal to execute functions (such as training, creating a dataset, evaluating performance), and testing different architectures are possible implementations.
-
----
-
-## 7. Module.py methods
-As a side effect of this study, I created a structured and oriented module for the LSTM architecture shown above. The main methods are:
-
 
 ---
 ## 8. Running Locally
@@ -191,6 +202,11 @@ pip install -r requirements.txt
 🚀Run the project:
 ```bash
 python main.py
+```
+
+📌To use only module.py, import in your python code:
+```python
+from lstm import classifier_model
 ```
 ---
 
