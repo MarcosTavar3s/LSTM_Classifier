@@ -48,7 +48,7 @@ Regarding the dataset, this study utilizes Realistic Action Recognition: UCF50 [
 <div align="center">
 
 | Diving | HorseRace | Mixing |
-| :-----: | :-----: | :-----: | :-----: |
+| :-----: | :-----: | :-----: |
 | <img src="code/examples/diving_gif.gif" alt="Diving gif" width="200"/> | <img src="code/examples/v_HorseRace_g11_c07.gif" alt="HorseRace gif" width="200"/> | <img src="code/examples/v_Mixing_g18_c02.gif" alt="Mixing gif" width="200"/> 
 
   _Example of Diving, HorseRace, and Mixing classes in UCF50 dataset_
