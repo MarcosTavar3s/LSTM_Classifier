@@ -224,4 +224,4 @@ from lstm import classifier_model
 ---
 
 ## 11. License
-This project is licensed under the terms of the [GNU General Public License v3.0](https://github.com/MarcosTavar3s/LSTM_Classifier/blob/main/LICENSE).
+This project is licensed under the terms of the [MIT License](https://github.com/MarcosTavar3s/LSTM_Classifier/blob/main/LICENSE).
