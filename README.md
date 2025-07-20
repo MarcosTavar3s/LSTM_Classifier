@@ -167,7 +167,31 @@ As a side effect of this study, I created a structured and oriented module for t
 ---
 
 ## 5. Results and Discussion
-Initially, the metrics of mean loss, accuracy, precision, recall, and training time for each trained model will be discussed.
+Figure 01 shows that the best performance in terms of accuracy, loss, recall, and precision occurs when 60 frames are collected from each video. Nonetheless, it is notable that for longer videos (more than 10 seconds), improving the frames collection may be desirable to provide a more detailed understanding of the action represented throughout the video.
+
+Regarding the epochs, I chose thirty because the network results start declining after this threshold. Even so, with a patience parameter of 10 epochs, it is perceivable that none of the settings go beyond 23, which means that the training time could be reduced as the number of epochs decreases.
+
+<img src="statistics/Figure_1.png" alt="Performance Graphics"/>
+
+<div align="center">
+
+_Figure 01: Accuracy, loss, recall, precision graphics_
+
+  
+</div>
+
+In terms of classification, Figure 02 represents the comparison between the original and the predicted video. Note that there is a minimal delay before video classification, which happens in virtue of the need to receive some frames to make a proper inference.
+
+<div align="center">
+  
+<img src="code/examples/comparation.gif" alt="Comparison gif"/> 
+
+_Figure 02: Comparison among the original and the predicted video_
+
+  
+</div>
+
+This behavior in UCF50 has shown that Long-Short Term Memory Networks are a possibile solution to human movement classification problems.
 
 ---
 
