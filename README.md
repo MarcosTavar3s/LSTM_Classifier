@@ -35,7 +35,7 @@ LSTM_Classifier/
 ├── code/
 |   ├── examples/ # videos to test the network
 │   ├── module.py
-│   ├── predict.py
+│   ├── test.py
 │   ├── train.py
 |   ├── requirements.txt
 ├── statistics/ # statistic results
