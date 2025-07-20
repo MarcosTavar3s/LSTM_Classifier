@@ -202,7 +202,8 @@ pip install -r requirements.txt
 
 🚀Run the project:
 ```bash
-python main.py
+python train.py # for training
+python test.py # for testing
 ```
 
 📌To use only module.py, import in your python code:
